@@ -2,7 +2,7 @@ from django.db import models
 
 
 class RecipesInfo(models.Model):
-    id = models.IntegerField('ID', primary_key=True)
+    id = models.PositiveIntegerField('ID', primary_key=True)
     title = models.CharField('料理名', max_length=100)
     making_time = models.CharField('作成時間', max_length=100)
     serves = models.CharField('人数', max_length=100)
